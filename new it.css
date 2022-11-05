@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(234, 219, 219);
+    background-image: url(https://cdn.dribbble.com/users/77377/screenshots/10492600/media/b61593a6ad2744619e3af92ef9768680.png?compress=1&resize=400x300&vertical=top);
+    
+    background-size:contain;
+  
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 140px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+
+}
+
+.logo{
+    width: 300px;
+    cursor: pointer;
+
+}
+
+.cart-icon{
+    width: 40px;
+    cursor: pointer;
+    margin-right: 80px;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+    display: inline-block;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.4s;
+}
+
+nav ul li a:hover::after{
+    width: 50%;
+} 
+
+.card{
+    background: white;
+    width: 280px;   
+    margin: 10px;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 80px;
+}
+
+.card-image{
+    background-color: rgb(182, 229, 231);
+    height: 162px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+#class1{
+    background-image: url(https://www.clariwell.in/resources/best-web-development-course-top-training-institute-in-pune.webp);
+}
+#class2{
+    background-image: url(https://ares.decipherzone.com/blog-manager/uploads/banner_3ceec8dc-c260-47d9-a8f8-79dd0ee7ea37.jpg);
+}
+#class3{
+    background-image: url(https://wisesofttech.com/wp-content/uploads/2021/08/shutterstock_1096975310.jpg);
+}
+#class4{
+    background-image: url(notes.jpg);
+}
+
+.card h2{
+    padding: 10px;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card a{
+    background-color: rgb(243, 90, 90);
+    color: aliceblue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.card:hover{
+    background-color: rgb(173, 101, 236);
+    color: rgb(6, 6, 6);
+    cursor: pointer;
+    transform: scale(1.04);
+    transition:all is ease;
+}
+ 
+.button{
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px 50px;
+    border: 3px solid purple;
+    border-radius: 10px;
+}
+
+.button:hover{
+    animation: pulsate 1s ease-in-out;
+
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 
+        0 0 25px blue,
+        0 0 50px violet;
+
+    }
+}

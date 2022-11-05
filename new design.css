@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* background: rgb(47, 10, 10); */
+    background-image: url(https://cdn.dribbble.com/users/77377/screenshots/10492600/media/b61593a6ad2744619e3af92ef9768680.png?compress=1&resize=400x300&vertical=top);
+    
+    background-size:contain;
+  
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 140px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+
+}
+
+.logo{
+    width: 300px;
+    cursor: pointer;
+
+}
+
+.cart-icon{
+    width: 40px;
+    cursor: pointer;
+    margin-right: 80px;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+    display: inline-block;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a:hover {
+    background-color:rgb(84, 235, 135);
+    border-radius: 5px;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.4s;
+}
+
+nav ul li a:hover::after{
+    width: 50%;
+} 
+
+.card{
+    background: white;
+    width: 280px;   
+    margin: 10px;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 80px;
+}
+
+.card-image{
+    background-color: rgb(182, 229, 231);
+    height: 191px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+#class1{
+    background-image: url(https://cdn.dribbble.com/users/392441/screenshots/2592452/ps.gif);
+}
+#class2{
+    background-image: url(data:image/png;base64,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);
+}
+#class3{
+    background-image: url(https://1.bp.blogspot.com/-A0UWXSJHi0s/YF0TNNQbDuI/AAAAAAAAE9g/eG4LIFUKWyIzego96bsx7tHlZjx2kDCCgCLcBGAsYHQ/s700/Descargar-CorelDraw-2021-Pre-Activado-full-crack.jpg);
+}
+#class4{
+    background-image: url(notes.jpg);
+}
+
+.card h2{
+    padding: 10px;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card a{
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.card:hover{
+    background-color: rgb(173, 101, 236);
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.04);
+    transition:all is ease;
+}
+ 
+.button{
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px 50px;
+    border: 3px solid purple;
+    border-radius: 10px;
+}
+
+.button:hover{
+    animation: pulsate 1s ease-in-out;
+
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 
+        0 0 25px blue,
+        0 0 50px violet;
+
+    }
+}

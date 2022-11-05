@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* background: rgb(47, 10, 10); */
+    background-image: url(https://img.freepik.com/free-vector/abstract-splashed-watercolor-textured-background_53876-8753.jpg?w=2000);
+    background-size: contain;
+  
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 140px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.card{
+    background: white;
+    width: 280px;   
+    margin: 10px;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 80px;
+}
+
+
+.card h2{
+    padding: 10px;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card a{
+    background-color: rgb(255, 92, 92);
+    color: aliceblue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.card:hover{
+    background-color: rgb(173, 101, 236);
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.04);
+    transition:all is ease;
+}

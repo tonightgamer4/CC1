@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(47, 10, 10);
+    background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fexplore%2Fbinary-code&psig=AOvVaw0zuYB8Cc70-l8ALUFjrpLM&ust=1651753751585000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOCt-73sxfcCFQAAAAAdAAAAABAD);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.card{
+    background: white;
+    width: 280px;   
+    margin: 10px;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 80px;
+}
+
+.card-image{
+    background-color: rgb(182, 229, 231);
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+#class1{
+    background-image: url(entc.jpg);
+}
+#class2{
+    background-image: url(imageit.jpg);
+}
+#class3{
+    background-image: url();
+}
+/* 
+.card 1{
+    background-image: url(imageto.jpg);
+}
+
+.card 2{
+    background-image: url(imageto.jpg);
+}
+
+
+.card 3{
+    background-image: url(imageto.jpg);
+} */
+
+.card h2{
+    padding: 10px;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card a{
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.card:hover{
+    background-color: rgb(255, 2, 2);
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.04);
+    transition:all is ease;
+}
+ 
+.button{
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px 50px;
+    border: 3px solid purple;
+    border-radius: 10px;
+}
+
+.button:hover{
+    animation: pulsate 1s ease-in-out;
+
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 
+        0 0 25px blue,
+        0 0 50px violet;
+
+    }
+}
